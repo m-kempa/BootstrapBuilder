@@ -1,4 +1,6 @@
-# BootstrapBuilder
+# BootstrapBuilder  
+![Build status](https://travis-ci.com/m-kempa/BootstrapBuilder.svg?branch=main)
+
 
 IO - projekt
 
