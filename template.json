@@ -1,12 +1,22 @@
 {
-											"title": "Bootstrap template",
-											"isHeader": true,
-											"responsive": true,
-											"header": {
-												"name": "Brand name",
-												"searchform": false,
-												"style": "dark",
-												"fixed": true,
-												"collapsable": true
-											}
-										}
+	"title": "Bootstrap template",
+	"isHeader": true,
+	"isFooter": true,
+	"responsive": true,
+	"body": {
+		"container_fluid": false,
+		"content": "Lorem ipsum"
+	},
+	"header": {
+		"name": "Brand name",
+		"searchform": true,
+		"style": "dark",
+		"fixed": true,
+		"collapsable": true
+	},
+	"footer": {
+		"content": "footer-content: brandmark",
+		"contact": "contactme@gmail.com",
+		"style": "dark"
+	}
+}
