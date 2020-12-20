@@ -1,1 +1,7 @@
 language: Java
+notifications:
+  email:
+    - jakub.rozycki@student.put.poznan.pl
+    - mateusz.a.lemanski@student.put.poznan.pl
+    - mateusz.kempa@student.put.poznan.pl
+    - joanna.bronka@student.put.poznan.pl
