@@ -1,0 +1,12 @@
+{
+											"title": "Bootstrap template",
+											"isHeader": true,
+											"responsive": true,
+											"header": {
+												"name": "Brand name",
+												"searchform": false,
+												"style": "dark",
+												"fixed": true,
+												"collapsable": true
+											}
+										}
