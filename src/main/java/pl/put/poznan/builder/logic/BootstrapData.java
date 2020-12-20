@@ -9,7 +9,10 @@ package pl.put.poznan.builder.logic;
 public class BootstrapData {
     public String title;
     public Boolean isHeader;
+    public Boolean isFooter;
     public Boolean responsive;
+    public Body body;
     public Header header;
+    public Footer footer;
 }
 
