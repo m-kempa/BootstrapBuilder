@@ -1,0 +1,4 @@
+pl\put\poznan\builder\logic\BootstrapInfo.class
+pl\put\poznan\builder\rest\BootstrapBuilderController.class
+pl\put\poznan\builder\logic\BootstrapBuilder.class
+pl\put\poznan\builder\app\BootstrapBuilderApplication.class
