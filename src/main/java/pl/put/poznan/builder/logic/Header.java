@@ -13,6 +13,13 @@ public class Header {
     public String style;
     public Boolean fixed;
     public Boolean collapsable;
+    public List<Subpage> subpages;
 
+    public class Subpage {
+        public String name;
+        public Boolean dropdown;
+        public String[] elements;
+    }
 
 }
+
