@@ -12,3 +12,15 @@ skład grupy:
 
 Bootstrap Builder:
 Aplikacja dla programistów webowych, którzy chcą szybko utworzyć szkielet aplikacji z wykorzystaniem frameworka Bootstrap 4. Program pozwala na zwrócenie kodu strony z nagłówkiem, stopką, a także odpowiednimi tagami META w kontekście SEO zwykłego, Open Graph i Twittera. Aplikacja będzie dostępna poprzez GUI, a także jako zdalne API, dzieki czemu można ją zintegrować z istniejącymi narzędziami.
+
+
+Jak uruchomić projekt:
+
+1.1 Generowanie jara, dokumentacji i instalowanie wszystkich potrzebnych paczek
+```
+mvn install
+```
+Uruchomienie aplikacji na localhost
+```
+mvn spring-boot:run
+```
