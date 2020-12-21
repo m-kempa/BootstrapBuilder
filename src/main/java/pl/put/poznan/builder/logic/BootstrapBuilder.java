@@ -1,6 +1,8 @@
 package pl.put.poznan.builder.logic;
 
 import com.google.gson.Gson;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Class that contains methods to get the information about bootstrap based webpage from the json
@@ -10,6 +12,8 @@ import com.google.gson.Gson;
  */
 public class BootstrapBuilder {
 
+
+    static Logger LOGGER = LoggerFactory.getLogger(BootstrapBuilder.class);
     private String jsonContent;
     private BootstrapData bootstrapData;
     private Gson gson = new Gson();
@@ -19,7 +23,15 @@ public class BootstrapBuilder {
     }
 
     public void setJsonContent(String jsonContent) {
-        this.bootstrapData = gson.fromJson(jsonContent, BootstrapData.class);
+
+
+        try{
+            this.bootstrapData = gson.fromJson(jsonContent, BootstrapData.class);
+            LOGGER.info("Json loaded");
+        }
+        catch(Exception e){
+            LOGGER.debug("Zły format jsona", e);
+        }
     }
 
     /**
@@ -33,6 +45,7 @@ public class BootstrapBuilder {
 
         //navbar
         if (this.bootstrapData.isHeader) {
+            LOGGER.info("Navbar added");
             result += "<nav class=\"navbar";
             if (this.bootstrapData.responsive) {
                 result += " navbar-expand-md";
@@ -89,6 +102,9 @@ public class BootstrapBuilder {
             if (this.bootstrapData.header.collapsable) { result += "</div>"; }
 
             result += "</nav>";
+        }
+        else{
+            LOGGER.debug("Brak lub błąd headera");
         }
 
         //body (container)

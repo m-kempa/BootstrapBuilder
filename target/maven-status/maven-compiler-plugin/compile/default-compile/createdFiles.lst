@@ -1,4 +1,8 @@
-pl\put\poznan\builder\logic\BootstrapInfo.class
 pl\put\poznan\builder\rest\BootstrapBuilderController.class
 pl\put\poznan\builder\logic\BootstrapBuilder.class
+pl\put\poznan\builder\logic\Header.class
+pl\put\poznan\builder\logic\Body.class
+pl\put\poznan\builder\logic\Header$Subpage.class
+pl\put\poznan\builder\logic\Footer.class
+pl\put\poznan\builder\logic\BootstrapData.class
 pl\put\poznan\builder\app\BootstrapBuilderApplication.class
