@@ -9,14 +9,21 @@
 	},
 	"header": {
 		"name": "Brand name",
+		"subpages": [
+			{"name": "page1", "dropdown": true, "elements": ["subFirst", "subSecond", "subThird"]},
+			{"name": "page2", "dropdown": true, "elements": ["subFirst", "subSecond"]}
+		],
 		"searchform": true,
-		"style": "dark",
+		"style": "light",
 		"fixed": true,
 		"collapsable": true
 	},
 	"footer": {
 		"content": "footer-content: brandmark",
-		"contact": "contactme@gmail.com",
-		"style": "dark"
+		"contact": "email: contactme@gmail.com",
+		"style": "light"
 	}
 }
+
+
+
