@@ -49,7 +49,33 @@ public class BootstrapBuilder {
             //brand name
             result += "<a class=\"navbar-brand\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
 
+            //collapsing button
+            if (this.bootstrapData.header.collapsable) {
+                result += "<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">"
+                        + "<span class=\"navbar-toggler-icon\"></span></button>\n";
+                result += "<div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">";
+            }
 
+            //navbar subpages
+            result += "<ul class=\"navbar-nav mr-auto\">";
+            if (this.bootstrapData.header.subpages.size() > 0) {
+                for (Header.Subpage sub : this.bootstrapData.header.subpages) {
+                    result += "<li class=\"nav-item";
+                    if (sub.dropdown) {
+                        result += " dropdown";
+                        result += "\"><a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbardrop\" data-toggle=\"dropdown\">";
+                        result += sub.name + "</a><div class=\"dropdown-menu\">";
+                        if (sub.elements.length > 0) {
+                            for (String elem : sub.elements) {
+                                result += "<a class=\"dropdown-item\" href=\"#\">" + elem + "</a>";
+                            }
+                        }
+                        result += "</div>";
+                    } else result += "\"><a class=\"nav-link\" href=\"#\">" + sub.name + "</a>";
+                    result += "</li>";
+                }
+            }
+            result += "</ul>";
 
 
 
