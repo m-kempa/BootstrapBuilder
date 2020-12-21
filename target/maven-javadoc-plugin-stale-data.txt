@@ -1,0 +1,26 @@
+cmd.exe
+/X
+/C
+""C:\Program Files\Java\jdk-11.0.8\bin\javadoc.exe" @options @packages"
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\allclasses-index.html = 1608559402391
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\allclasses.html = 1608559402485
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\allpackages-index.html = 1608559402423
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\constant-values.html = 1608559401915
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\deprecated-list.html = 1608559402456
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\element-list = 1608559401734
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\help-doc.html = 1608559402543
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\index-all.html = 1608559402358
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\index.html = 1608559402500
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\member-search-index.js = 1608559402340
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\member-search-index.zip = 1608559402347
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\options = 1608559399139
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\overview-summary.html = 1608559402525
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\overview-tree.html = 1608559402270
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\package-search-index.js = 1608559402313
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\package-search-index.zip = 1608559402317
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\packages = 1608559399140
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\script.js = 1608559402585
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\search.js = 1608559402590
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\stylesheet.css = 1608559402573
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\type-search-index.js = 1608559402326
+C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\target\apidocs\type-search-index.zip = 1608559402328

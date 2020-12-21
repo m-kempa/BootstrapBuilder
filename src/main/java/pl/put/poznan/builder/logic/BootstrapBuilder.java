@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Class that contains methods to get the information about bootstrap based webpage from the json
  * and then generate html based on that information
- * @author Jakub Różycki & Joanna Bronka & Mateusz Lemański & Mateusz Kempa
+ * @author Jakub Różycki, Joanna Bronka, Mateusz Lemański, Mateusz Kempa
  * @version 1.0
  */
 public class BootstrapBuilder {
