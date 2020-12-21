@@ -20,7 +20,7 @@ Jak uruchomić projekt:
 ```
 mvn install
 ```
-Uruchomienie aplikacji na localhost
+1.2 Uruchomienie aplikacji na localhost
 ```
 mvn spring-boot:run
 ```
