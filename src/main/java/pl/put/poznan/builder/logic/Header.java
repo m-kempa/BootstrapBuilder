@@ -14,6 +14,7 @@ public class Header {
     public Boolean fixed;
     public Boolean collapsable;
     public List<Subpage> subpages;
+    public Boolean clock;
 
     public class Subpage {
         public String name;

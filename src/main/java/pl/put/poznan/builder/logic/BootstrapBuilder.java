@@ -88,9 +88,23 @@ public class BootstrapBuilder {
                     result += "</li>";
                 }
             }
+
+            //clock
+            if (this.bootstrapData.header.clock) {
+                result += "<li class=\"nav-item\" >"
+                        + "<div class=\"card bg-secondary text-white\">"
+                        + "<h3 class=\"card-title text-center\">"
+                        + "<div class=\"d-flex flex-wrap justify-content-center mt-2\">"
+                        + "<a><span class=\"badge hours\"></span></a> : "
+                        + "<a><span class=\"badge min\"></span></a> :"
+                        + "<a><span class=\"badge sec\"></span></a>"
+                        + "</div>"
+                        + "</h3>"
+                        + "</div>"
+                        ;
+                result += "</li>";
+            }
             result += "</ul>";
-
-
 
             //search form
             if (this.bootstrapData.header.searchform) {

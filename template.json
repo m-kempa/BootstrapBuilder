@@ -16,7 +16,8 @@
 		"searchform": true,
 		"style": "light",
 		"fixed": true,
-		"collapsable": true
+		"collapsable": true,
+		"clock": true
 	},
 	"footer": {
 		"content": "footer-content: brandmark",
