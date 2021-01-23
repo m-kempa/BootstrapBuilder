@@ -46,7 +46,7 @@ public class BootstrapBuilder {
         //navbar
         if (this.bootstrapData.isHeader) {
             LOGGER.info("Navbar added");
-            result += "<nav class=\"navbar";
+            result += "<nav class=\"navbar tag=navbar";
             if (this.bootstrapData.responsive) {
                 result += " navbar-expand-md";
             }
@@ -60,7 +60,7 @@ public class BootstrapBuilder {
             result += "\">";
 
             //brand name
-            result += "<a class=\"navbar-brand\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
+            result += "<a class=\"navbar-brand tag=brand_name\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
 
             //collapsing button
             if (this.bootstrapData.header.collapsable) {
@@ -70,7 +70,7 @@ public class BootstrapBuilder {
             }
 
             //navbar subpages
-            result += "<ul class=\"navbar-nav mr-auto\">";
+            result += "<ul class=\"navbar-nav tag=subpages mr-auto\">";
             if (this.bootstrapData.header.subpages.size() > 0) {
                 for (Header.Subpage sub : this.bootstrapData.header.subpages) {
                     result += "<li class=\"nav-item";
@@ -91,7 +91,7 @@ public class BootstrapBuilder {
 
             //clock
             if (this.bootstrapData.header.clock) {
-                result += "<li class=\"nav-item\" >"
+                result += "<li class=\"nav-item\" tag=clock>"
                         + "<div class=\"card bg-secondary text-white\">"
                         + "<h3 class=\"card-title text-center\">"
                         + "<div class=\"d-flex flex-wrap justify-content-center mt-2\">"
@@ -108,7 +108,7 @@ public class BootstrapBuilder {
 
             //search form
             if (this.bootstrapData.header.searchform) {
-                result += "<form class=\"form-inline\" action=\"#\">"
+                result += "<form class=\"form-inline\" tag=search action=\"#\">"
                         + "<input class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Search\">"
                         + "<button class=\"btn btn-secondary\" type=\"submit\">Search</button></form>";
             }
@@ -122,7 +122,7 @@ public class BootstrapBuilder {
         }
 
         //body (container)
-        result += "<main class=\"";
+        result += "<main tag=body class=\"";
         if (this.bootstrapData.body.container_fluid) {
             result += "container-fluid";
         } else {
@@ -146,7 +146,7 @@ public class BootstrapBuilder {
 
         //footer
         if (this.bootstrapData.isFooter) {
-            result += "<footer class=\"";
+            result += "<footer class=\" tag=footer";
             switch (this.bootstrapData.header.style) {
                 case "dark": result += "bg-dark navbar-dark"; break;
                 case "light": result += "bg-light navbar-light"; break;
