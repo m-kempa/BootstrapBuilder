@@ -3,8 +3,9 @@ package pl.put.poznan.builder.logic;
 
 public class Element {
 
-    public String createNavbar(BootstrapData bootstrapData, String result) {
+    public String createNavbar(BootstrapData bootstrapData) {
         //navbar
+        String result = "";
         result += "<nav class=\"navbar";
         boolean x = bootstrapData.getResponsive();
         if (x) {
@@ -31,28 +32,8 @@ public class Element {
     }
 
 
-
-    public String createNavbarSubPages(BootstrapData bootstrapData, String result) {
-        //navbar subpages
-            for (Header.Subpage sub : bootstrapData.header.subpages) {
-                result += "<li class=\"nav-item";
-                if (sub.dropdown) {
-                    result += " dropdown";
-                    result += "\"><a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbardrop\" data-toggle=\"dropdown\">";
-                    result += sub.name + "</a><div class=\"dropdown-menu\">";
-                    if (sub.elements.length > 0) {
-                        for (String elem : sub.elements) {
-                            result += "<a class=\"dropdown-item\" href=\"#\">" + elem + "</a>";
-                        }
-                    }
-                    result += "</div>";
-                } else result += "\"><a class=\"nav-link\" href=\"#\">" + sub.name + "</a>";
-                result += "</li>";
-            }
-        return result;
-    }
-
-    public String createFooter(BootstrapData bootstrapData, String result){
+    public String createFooter(BootstrapData bootstrapData){
+        String result = "";
         result += "<footer class=\"";
         String styl = bootstrapData.getHeaderStyle();
         switch (styl) {

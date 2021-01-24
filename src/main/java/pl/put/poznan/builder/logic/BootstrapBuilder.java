@@ -45,7 +45,7 @@ public class BootstrapBuilder {
         String result = "";
         if (bootstrapData.isHeader) {
             LOGGER.info("Navbar added");
-            result += element.createNavbar(this.bootstrapData, result);
+            result += element.createNavbar(this.bootstrapData);
 
             //brand name
             result += "<a class=\"navbar-brand\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
@@ -134,7 +134,7 @@ public class BootstrapBuilder {
 
         //footer
         if (this.bootstrapData.isFooter) {
-            result+= element.createFooter(this.bootstrapData, result);
+            result+= element.createFooter(this.bootstrapData);
         }
 
 
