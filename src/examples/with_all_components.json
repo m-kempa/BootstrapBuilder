@@ -4,7 +4,7 @@
 	"isFooter": true,
 	"responsive": true,
 	"body": {
-		"container_fluid": false,
+		"container_fluid": true,
 		"content": "Lorem ipsum"
 	},
 	"header": {
