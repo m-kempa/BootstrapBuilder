@@ -16,13 +16,13 @@ class BootstrapBuilderFooterTest {
     @Test
     void create_clock() {
 
-        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
 
         assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=clock"));
     }
      @Test
     void do_not_create_clock() {
-         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
+         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
 
          assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=clock")));
     }
