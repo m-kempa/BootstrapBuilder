@@ -35,8 +35,8 @@ public class Element {
     public String createFooter(BootstrapData bootstrapData){
         String result = "";
         result += "<footer class=\"";
-        String styl = bootstrapData.getHeaderStyle();
-        switch (styl) {
+        String style = bootstrapData.getHeaderStyle();
+        switch (style) {
             case "dark": result += "bg-dark navbar-dark"; break;
             case "light": result += "bg-light navbar-light"; break;
             case "blue": result += "bg-primary navbar-dark"; break;
