@@ -17,6 +17,7 @@ public class BootstrapBuilder {
     private String jsonContent;
     private BootstrapData bootstrapData;
     private Gson gson = new Gson();
+    public Element element = new Element();
 
     public String getJsonContent() {
         return jsonContent;
@@ -42,22 +43,9 @@ public class BootstrapBuilder {
      */
     public String getBodyContent() {
         String result = "";
-
-        //navbar
-        if (this.bootstrapData.isHeader) {
+        if (bootstrapData.isHeader) {
             LOGGER.info("Navbar added");
-            result += "<nav class=\"navbar";
-            if (this.bootstrapData.responsive) {
-                result += " navbar-expand-md";
-            }
-            switch (this.bootstrapData.header.style) {
-                case "dark": result += " bg-dark navbar-dark"; break;
-                case "light": result += " bg-light navbar-light"; break;
-                case "blue": result += " bg-primary navbar-dark"; break;
-                default: result += " bg-success navbar-dark";
-            }
-            result += this.bootstrapData.header.fixed ? " fixed-top" : " static-top";
-            result += "\">";
+            result += element.createNavbar(this.bootstrapData, result);
 
             //brand name
             result += "<a class=\"navbar-brand\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
@@ -101,7 +89,7 @@ public class BootstrapBuilder {
                         + "</div>"
                         + "</h3>"
                         + "</div>"
-                        ;
+                ;
                 result += "</li>";
             }
             result += "</ul>";

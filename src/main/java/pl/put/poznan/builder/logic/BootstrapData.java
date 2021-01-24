@@ -14,5 +14,16 @@ public class BootstrapData {
     public Body body;
     public Header header;
     public Footer footer;
+
+    boolean getResponsive(){
+        return this.responsive;
+    }
+    String getHeaderStyle(){
+        return this.header.style;
+    }
+
+    boolean getHeaderFixed(){
+        return this.header.fixed;
+    }
 }
 
