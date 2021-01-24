@@ -1,0 +1,30 @@
+{
+	"title": "Bootstrap template",
+	"isHeader": true,
+	"isFooter": true,
+	"responsive": true,
+	"body": {
+		"container_fluid": false,
+		"content": "Lorem ipsum"
+	},
+	"header": {
+		"name": "Brand name",
+		"subpages": [
+			{"name": "page1", "dropdown": true, "elements": ["subFirst", "subSecond", "subThird"]},
+			{"name": "page2", "dropdown": true, "elements": ["subFirst", "subSecond"]}
+		],
+		"searchform": true,
+		"style": "",
+		"fixed": true,
+		"collapsable": true,
+		"clock": true
+	},
+	"footer": {
+		"content": "footer-content: brandmark",
+		"contact": "email: contactme@gmail.com",
+		"style": "light"
+	}
+}
+
+
+
