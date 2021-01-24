@@ -14,17 +14,15 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 class BootstrapBuilderFooterTest {
     @Test
-    void create_clock() {
-
+    void create_footer() {
         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
-
-        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=clock"));
+        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=footer"));
     }
-     @Test
-    void do_not_create_clock() {
-         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
 
-         assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=clock")));
+    @Test
+    void do_not_create_footer() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=footer")));
     }
 
     private BootstrapBuilder getBootstrapBuilder(String pathname) {
