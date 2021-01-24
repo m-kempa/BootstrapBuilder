@@ -64,7 +64,7 @@ public class BootstrapBuilder {
 
             //collapsing button
             if (this.bootstrapData.header.collapsable) {
-                result += "<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">"
+                result += "<button class=\"navbar-toggler\" tag=collapsing_button type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">"
                         + "<span class=\"navbar-toggler-icon\"></span></button>\n";
                 result += "<div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\">";
             }

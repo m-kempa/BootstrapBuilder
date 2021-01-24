@@ -14,6 +14,43 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.junit.jupiter.api.Assertions.fail;
 
 class BootstrapBuilderHeaderTest {
+
+    @Test
+    void create_header() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=navbar"));
+    }
+
+    @Test
+    void do_not_create_header() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=navbar")));
+    }
+
+    @Test
+    void create_brand_name() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=brand_name"));
+    }
+
+    @Test
+    void do_not_create_brand_name() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=brand_name")));
+    }
+
+    @Test
+    void create_collapsing_button() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=collapsing_button"));
+    }
+
+    @Test
+    void do_not_collapsing_button() {
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
+        assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=collapsing_button")));
+    }
+
     @Test
     void create_clock() {
         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
