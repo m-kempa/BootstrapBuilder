@@ -1,7 +1,8 @@
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\rest\BootstrapBuilderController.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\logic\BootstrapBuilder.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\logic\Header.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\logic\Body.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\logic\BootstrapData.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\app\BootstrapBuilderApplication.java
-C:\Users\Leman\Desktop\IO_SPRINT\BootstrapBuilder\src\main\java\pl\put\poznan\builder\logic\Footer.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/Element.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/Footer.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/Header.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/rest/BootstrapBuilderController.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/BootstrapData.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/BootstrapBuilder.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/logic/Body.java
+/home/bubik/Documents/Studia/IO/SPRINT/BootstrapBuilder/src/main/java/pl/put/poznan/builder/app/BootstrapBuilderApplication.java

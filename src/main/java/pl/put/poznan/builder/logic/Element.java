@@ -34,8 +34,6 @@ public class Element {
 
     public String createNavbarSubPages(BootstrapData bootstrapData, String result) {
         //navbar subpages
-        result += "<ul class=\"navbar-nav mr-auto\">";
-        if (bootstrapData.header.subpages.size() > 0) {
             for (Header.Subpage sub : bootstrapData.header.subpages) {
                 result += "<li class=\"nav-item";
                 if (sub.dropdown) {
@@ -51,7 +49,23 @@ public class Element {
                 } else result += "\"><a class=\"nav-link\" href=\"#\">" + sub.name + "</a>";
                 result += "</li>";
             }
+        return result;
+    }
+
+    public String createFooter(BootstrapData bootstrapData, String result){
+        result += "<footer class=\"";
+        String styl = bootstrapData.getHeaderStyle();
+        switch (styl) {
+            case "dark": result += "bg-dark navbar-dark"; break;
+            case "light": result += "bg-light navbar-light"; break;
+            case "blue": result += "bg-primary navbar-dark"; break;
+            default: result += "bg-success navbar-dark";
         }
+        result += "\" style=\"text-align: center; flex-shrink: 0\">";
+        result += "<p>" + bootstrapData.getFooterContent() + "</p>";
+        result += "<a href=\"mailto:" + bootstrapData.getFooterContact() + "\" target=\"_top\">";
+        result += bootstrapData.getFooterContact();
+        result += "</a></footer>";
         return result;
     }
 }

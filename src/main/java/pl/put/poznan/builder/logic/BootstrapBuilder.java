@@ -134,18 +134,7 @@ public class BootstrapBuilder {
 
         //footer
         if (this.bootstrapData.isFooter) {
-            result += "<footer class=\"";
-            switch (this.bootstrapData.header.style) {
-                case "dark": result += "bg-dark navbar-dark"; break;
-                case "light": result += "bg-light navbar-light"; break;
-                case "blue": result += "bg-primary navbar-dark"; break;
-                default: result += "bg-success navbar-dark";
-            }
-            result += "\" style=\"text-align: center; flex-shrink: 0\">";
-            result += "<p>" + this.bootstrapData.footer.content + "</p>";
-            result += "<a href=\"mailto:" + this.bootstrapData.footer.contact + "\" target=\"_top\">";
-            result += this.bootstrapData.footer.contact;
-            result += "</a></footer>";
+            result+= element.createFooter(this.bootstrapData, result);
         }
 
 

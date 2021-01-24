@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" style="height: 100%">
 <head>
-    <meta charset="UTF-8">
-    <title>Genereated page</title>
+    <title th:text="${bootstrapBuilder.getTitle()}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setInterval( function() {
+                var hours = new Date().getHours();
+                $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+            }, 1000);
+            setInterval( function() {
+                var minutes = new Date().getMinutes();
+                $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+            },1000);
+            setInterval( function() {
+                var seconds = new Date().getSeconds();
+                $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+            },1000);
+        });
+    </script>
 </head>
-<body>
-
+<body style="height: 100%; display: flex; flex-direction: column" th:utext="${bootstrapBuilder.getBodyContent()}">
 </body>
 </html>

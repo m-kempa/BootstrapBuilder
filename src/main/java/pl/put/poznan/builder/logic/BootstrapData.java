@@ -25,5 +25,12 @@ public class BootstrapData {
     boolean getHeaderFixed(){
         return this.header.fixed;
     }
+
+    String getFooterContent(){
+        return this.footer.content;
+    }
+    String getFooterContact(){
+        return this.footer.contact;
+    }
 }
 

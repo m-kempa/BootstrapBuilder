@@ -17,4 +17,14 @@ class BuilderTest {
                 assertEquals("<nav class=\"navbar navbar-expand-md bg-light navbar-light fixed-top\">", element.createNavbar(DataMocked, result));
         }
 
+        @Test
+        void testCreateFooter() {
+                BootstrapData DataMocked = mock(BootstrapData.class);
+                String result = "";
+                when(DataMocked.getHeaderStyle()).thenReturn("light");
+                when(DataMocked.getFooterContent()).thenReturn("x");
+                when(DataMocked.getFooterContact()).thenReturn("xx");
+                assertEquals("<footer class=\"bg-light navbar-light\" style=\"text-align: center; flex-shrink: 0\"><p>x</p><a href=\"mailto:xx\" target=\"_top\">xx</a></footer>", element.createFooter(DataMocked, result));
+        }
+
 }
