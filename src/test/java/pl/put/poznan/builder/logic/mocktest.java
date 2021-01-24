@@ -26,4 +26,13 @@ class BuilderTest {
                 assertEquals("<footer class=\"bg-light navbar-light\" style=\"text-align: center; flex-shrink: 0\"><p>x</p><a href=\"mailto:xx\" target=\"_top\">xx</a></footer>", element.createFooter(DataMocked));
         }
 
+        @Test
+        void testCreateFooter2() {
+                BootstrapData DataMocked = mock(BootstrapData.class);
+                when(DataMocked.getHeaderStyle()).thenReturn("dark");
+                when(DataMocked.getFooterContent()).thenReturn("x");
+                when(DataMocked.getFooterContact()).thenReturn("xx");
+                assertEquals("<footer class=\"bg-dark navbar-dark\" style=\"text-align: center; flex-shrink: 0\"><p>x</p><a href=\"mailto:xx\" target=\"_top\">xx</a></footer>", element.createFooter(DataMocked));
+        }
+
 }
