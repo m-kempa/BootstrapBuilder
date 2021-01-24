@@ -1,8 +1,8 @@
 {
 	"title": "Bootstrap template",
-	"isHeader": true,
-	"isFooter": true,
-	"responsive": true,
+	"isHeader": false,
+	"isFooter": false,
+	"responsive": false,
 	"body": {
 		"container_fluid": false,
 		"content": "Lorem ipsum"
@@ -10,13 +10,13 @@
 	"header": {
 		"name": "Brand name",
 		"subpages": [
-			{"name": "page1", "dropdown": true, "elements": ["subFirst", "subSecond", "subThird"]},
-			{"name": "page2", "dropdown": true, "elements": ["subFirst", "subSecond"]}
+			{"name": "page1", "dropdown": false, "elements": ["subFirst", "subSecond", "subThird"]},
+			{"name": "page2", "dropdown": false, "elements": ["subFirst", "subSecond"]}
 		],
-		"searchform": true,
+		"searchform": false,
 		"style": "light",
-		"fixed": true,
-		"collapsable": true,
+		"fixed": false,
+		"collapsable": false,
 		"clock": false
 	},
 	"footer": {
