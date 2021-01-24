@@ -7,17 +7,25 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import static com.sun.tools.doclint.Entity.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.not;
 import static org.junit.jupiter.api.Assertions.fail;
 
-class BootstrapBuilderTest {
+class BootstrapBuilderHeaderTest {
     @Test
     void create_clock() {
 
         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
 
         assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=clock"));
+    }
+     @Test
+    void do_not_create_clock() {
+         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
+
+         assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=clock")));
     }
 
     private BootstrapBuilder getBootstrapBuilder(String pathname) {
