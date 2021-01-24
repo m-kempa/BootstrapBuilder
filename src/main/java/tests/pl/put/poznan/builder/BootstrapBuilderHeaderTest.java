@@ -16,15 +16,12 @@ import static org.junit.jupiter.api.Assertions.fail;
 class BootstrapBuilderHeaderTest {
     @Test
     void create_clock() {
-
-        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
-
+        BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
         assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=clock"));
     }
      @Test
     void do_not_create_clock() {
-         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_clock.json");
-
+         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
          assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=clock")));
     }
 
