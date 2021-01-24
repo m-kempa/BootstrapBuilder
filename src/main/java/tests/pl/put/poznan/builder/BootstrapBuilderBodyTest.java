@@ -14,17 +14,14 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 class BootstrapBuilderBodyTest {
     @Test
-    void create_clock() {
-
+    void body_container_fluid_builds_container_fluid() {
         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
-
-        assertThat(bootstrapBuilder.getBodyContent(), containsString("tag=clock"));
+        assertThat(bootstrapBuilder.getBodyContent(), containsString("container-fluid"));
     }
      @Test
-    void do_not_create_clock() {
-         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/with_all_components.json");
-
-         assertThat(bootstrapBuilder.getBodyContent(), not(containsString("tag=clock")));
+    void body_container_fluid_does_not_build_container_fluid() {
+         BootstrapBuilder bootstrapBuilder = getBootstrapBuilder("src/examples/without_any_components.json");
+         assertThat(bootstrapBuilder.getBodyContent(), not(containsString("container-fluid")));
     }
 
     private BootstrapBuilder getBootstrapBuilder(String pathname) {
