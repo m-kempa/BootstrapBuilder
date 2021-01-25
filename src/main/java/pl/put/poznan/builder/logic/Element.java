@@ -1,5 +1,12 @@
 package pl.put.poznan.builder.logic;
 
+/**
+ * Class required to create mock tests, it contains the methods for builder
+ *
+ * @author Jakub Różycki
+ * @version 1.0
+ */
+
 
 public class Element {
 
