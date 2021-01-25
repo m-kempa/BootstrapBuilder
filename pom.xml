@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.put.poznan</groupId>
 	<artifactId>BootstrapBuilder</artifactId>
-	<version>1.7</version>
+	<version>2.5</version>
 	<name>BootstrapBuilder</name>
 	<description>Bootstrap HTML generator from Json</description>
 
