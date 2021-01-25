@@ -12,6 +12,14 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
 
+/**
+ * Test class contains tests for body elements
+ *
+ * @author Joanna Bronka, Mateusz Lemański
+ * @version 1.0
+ */
+
+
 class BootstrapBuilderBodyTest {
     @Test
     void body_container_fluid_builds_container_fluid() {

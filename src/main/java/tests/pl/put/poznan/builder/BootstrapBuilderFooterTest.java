@@ -12,6 +12,14 @@ import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
 
+/**
+ * Test class contains tests for footer elements
+ *
+ * @author Joanna Bronka, Mateusz Lemański
+ * @version 1.0
+ */
+
+
 class BootstrapBuilderFooterTest {
     @Test
     void create_footer() {

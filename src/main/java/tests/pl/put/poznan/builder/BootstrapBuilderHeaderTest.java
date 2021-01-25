@@ -13,6 +13,14 @@ import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.jupiter.api.Assertions.fail;
 
+/**
+ * Test class contains tests for header elements
+ *
+ * @author Joanna Bronka, Mateusz Lemański
+ * @version 1.0
+ */
+
+
 class BootstrapBuilderHeaderTest {
 
     @Test
