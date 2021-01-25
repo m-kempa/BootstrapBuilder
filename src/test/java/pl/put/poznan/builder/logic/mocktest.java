@@ -5,6 +5,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+/**
+ * Test classes with mockito library usage
+ *
+ * @author Mateusz Kempa
+ * @version 1.0
+ */
+
 class BuilderTest {
         public Element element = new Element();
         @Test
