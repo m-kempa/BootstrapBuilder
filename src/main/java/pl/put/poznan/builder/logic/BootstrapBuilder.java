@@ -48,7 +48,7 @@ public class BootstrapBuilder {
             result += element.createNavbar(this.bootstrapData);
 
             //brand name
-            result += "<a class=\"navbar-brand\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
+            result += "<a class=\"navbar-brand tag=brand_name\" href=\"#\">" + this.bootstrapData.header.name + "</a>";
 
             //collapsing button
             if (this.bootstrapData.header.collapsable) {

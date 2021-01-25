@@ -6,7 +6,7 @@ public class Element {
     public String createNavbar(BootstrapData bootstrapData) {
         //navbar
         String result = "";
-        result += "<nav class=\"navbar";
+        result += "<nav tag=navbar class=\"navbar";
         boolean x = bootstrapData.getResponsive();
         if (x) {
             result += " navbar-expand-md";
@@ -29,12 +29,14 @@ public class Element {
         result += fixed ? " fixed-top" : " static-top";
         result += "\">";
         return result;
+
+
     }
 
 
     public String createFooter(BootstrapData bootstrapData){
         String result = "";
-        result += "<footer class=\"";
+        result += "<footer tag=footer class=\"";
         String style = bootstrapData.getHeaderStyle();
         switch (style) {
             case "dark": result += "bg-dark navbar-dark"; break;
