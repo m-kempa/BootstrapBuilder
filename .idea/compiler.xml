@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="BootstrapBuilder" options="-parameters --add-exports jdk.compiler/com.sun.tools.doclint=ALL-UNNAMED" />
+      <module name="BootstrapBuilder" options="-parameters" />
     </option>
   </component>
 </project>
