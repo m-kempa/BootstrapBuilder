@@ -5,8 +5,8 @@
 IO - projekt
 
 skład grupy:
-- Jakub Różycki - Scrum Master
-- Mateusz Lemański - Proxy Product Owner
+- Jakub Różycki 
+- Mateusz Lemański 
 - Joanna Bronka
 - Mateusz Kempa 
 
